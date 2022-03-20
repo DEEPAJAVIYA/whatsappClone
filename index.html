@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Clone</title>
+    <link rel="stylesheet" href="css/whatsup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Search box -->
+    <div class="searchbar">
+        <i class="fa fa-arrow-left" onclick="searchbarback()" aria-hidden="true"></i>
+        <input type="text" placeholder="Search">
+    </div>
+    <!-- navigation bar -->
+    <div class="nav">
+        <div class="nav1">
+            <ul id="abc">
+                <li class="name">WhatsApp</li>
+                <li class="icon" style="margin-left: 124rem;" onclick="search()"><a href="#"><i class="fa fa-search"aria-hidden="true" id="icon1"></i></a>
+                </li>
+                <li class="icon" id="icon2"><a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                    <ul id="cde">
+                        <li><a href="#">New group</a></li>
+                        <li><a href="#">New broadcast</a></li>
+                        <li><a href="#">WhatsApp Web</a></li>
+                        <li><a href="#">Starred messages</a></li>
+                        <li><a href="#">settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <div class="option1"><a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a></div>
+            <div class="option" onclick="chat()"><a href="#">CHATS</a></div>
+            <div class="option" onclick="status()"><a href="#">STATUS</a></div>
+            <div class="option" onclick="calls()"><a href="#">CALLS</a></div>
+        </div>
+    </div>
+    <!-- chatbox -->
+    <div class="main">
+        <div class="user" onclick="openchatbox()">
+            <div class="dp">
+                <img src="user1.jpeg">
+            </div>
+            <div class="name">
+                <h3>Papa</h3>
+                <h6>Jay shree krishna papa...👑</h6>
+            </div>
+            <div class="date">
+                <h2>00.00</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user2.jpeg">
+            </div>
+            <div class="name">
+                <h3>Mummy</h3>
+                <h6>mummy 🍽 jamvanu bani gyu?😋</h6>
+            </div>
+            <div class="date">
+                <h2>23:32</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user3.jpeg">
+            </div>
+            <div class="name">
+                <h3>Vivek bhai</h3>
+                <h6>khotesh😃 how are you?</h6>
+            </div>
+            <div class="date">
+                <h2>22:22</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user4.jpeg">
+            </div>
+            <div class="name">
+                <h3>Dhara didi</h3>
+                <h6>dharli mane meggie banavi aap ne😜</h6>
+            </div>
+            <div class="date">
+                <h2>20:02</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user5.jpeg">
+            </div>
+            <div class="name">
+                <h3>Binal bhabhi</h3>
+                <h6>Take care bhabhi...😇</h6>
+            </div>
+            <div class="date">
+                <h2>19:20</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user6.jpeg">
+            </div>
+            <div class="name">
+                <h3>Jay</h3>
+                <h6>jayla kau tari mam ne ke aa game rame 6e lecture ma😂</h6>
+            </div>
+            <div class="date">
+                <h2>18:19</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user7.jpeg">
+            </div>
+            <div class="name">
+                <h3>Masii</h3>
+                <h6>masii byyy cu🙋‍♀️</h6>
+            </div>
+            <div class="date">
+                <h2>16:17</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user8.jpeg">
+            </div>
+            <div class="name">
+                <h3>Irva</h3>
+                <h6>abe idali🍙 pakku bhagvan tara ma magaj nakhvanu bhuli gya 6e😂</h6>
+            </div>
+            <div class="date">
+                <h2>15:51</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user9.jpeg">
+            </div>
+            <div class="name">
+                <h3>Sanskruti</h3>
+                <h6>6ani mani IELT kar ne bittuda😜</h6>
+            </div>
+            <div class="date">
+                <h2>13.14</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user10.jpeg">
+            </div>
+            <div class="name">
+                <h3>Riddhi</h3>
+                <h6>Oyy dogi jaldi nasto kar baki 1st lecture ma sir aavva nai de 🦮😂 </h6>
+            </div>
+            <div class="date">
+                <h2>12.21</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user11.jpeg">
+            </div>
+            <div class="name">
+                <h3>Hetsvi</h3>
+                <h6>kumbhakarn ketlu suvani lecture ma😴uth have</h6>
+            </div>
+            <div class="date">
+                <h2>11:11</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user12.jpeg">
+            </div>
+            <div class="name">
+                <h3>Kavita</h3>
+                <h6>Kavi clg ae books lavvanu bhuli jaje but aunty na rajama-chaval na bhulati kale😋</h6>
+            </div>
+            <div class="date">
+                <h2>10:20</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user18.jpeg">
+            </div>
+            <div class="name">
+                <h3>Shruti</h3>
+                <h6>Hii Backbone..😝majama ne?</h6>
+            </div>
+            <div class="date">
+                <h2>10:20</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user13.jpeg">
+            </div>
+            <div class="name">
+                <h3>Rushit</h3>
+                <h6>TQSM guruji html css sikhvva mate🙂🙏</h6>
+            </div>
+            <div class="date">
+                <h2>8:08</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user14.jpeg">
+            </div>
+            <div class="name">
+                <h3>Jemish</h3>
+                <h6>Good Morning🐒 su kare?</h6>
+            </div>
+            <div class="date">
+                <h2>6:54</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user15.jpeg">
+            </div>
+            <div class="name">
+                <h3>Bhavani</h3>
+                <h6>Abe lecture ma aav...sir taru name bole😂</h6>
+            </div>
+            <div class="date">
+                <h2>4:04</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user16.jpeg">
+            </div>
+            <div class="name">
+                <h3>Smit</h3>
+                <h6>Online classes ma to sir ni pin o6i mar😃</h6>
+            </div>
+            <div class="date">
+                <h2>3:33</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user17.jpeg">
+            </div>
+            <div class="name">
+                <h3>Abhay</h3>
+                <h6>How are you sodabatali?😝</h6>
+            </div>
+            <div class="date">
+                <h2>1:23</h2>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+    <!-- status -->
+    <div class="status">
+        <div class="user">
+            <div class="dp">
+                <img src="user19.jpeg" style="border: none;">
+                <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            </div>
+            <div class="name">
+                <h3>My status</h3>
+                <h6>Tap to add status update</h6>
+            </div>
+        </div>
+        <div class="recent-status">
+            <h3>Recent updates</h3>
+        </div>
+        <div class="user">
+            <div class="dp">
+                <img src="user5.jpeg" style="border-color: green; padding-left: 0.2rem;">
+            </div>
+            <div class="name">
+                <h3>Binalbhabhi</h3>
+                <h6>Today, 21:21</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user2.jpeg" style="border-color: green; padding-left: 0.2rem;">
+            </div>
+            <div class="name">
+                <h3>Mummy</h3>
+                <h6>Today, 19:20</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user1.jpeg" style="border-color: green; padding-left: 0.2rem;">
+            </div>
+            <div class="name">
+                <h3>papa</h3>
+                <h6>Today, 15:51</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user4.jpeg" style="border-color: green; padding-left: 0.2rem;">
+            </div>
+            <div class="name">
+                <h3>Dharadidi</h3>
+                <h6>Today, 12:13</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user6.jpeg" style="border-color: green; padding-left: 0.2rem;">
+            </div>
+            <div class="name">
+                <h3>Jay</h3>
+                <h6>Today, 11:11</h6>
+            </div>
+        </div>
+        <div class="recent-status">
+            <h3>Viewed updates</h3>
+        </div>
+        <div class="user">
+            <div class="dp">
+                <img src="user8.jpeg">
+            </div>
+            <div class="name">
+                <h3>Irva</h3>
+                <h6>Today, 8:09</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user11.jpeg">
+            </div>
+            <div class="name">
+                <h3>Hetsvi</h3>
+                <h6>Today, 9:10</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user16.jpeg">
+            </div>
+            <div class="name">
+                <h3>Smit</h3>
+                <h6>yesterday, 10.01</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user17.jpeg">
+            </div>
+            <div class="name">
+                <h3>Abhay</h3>
+                <h6>yesterday, 12.21</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user9.jpeg">
+            </div>
+            <div class="name">
+                <h3>Sanskruti</h3>
+                <h6>yesterday, 14:14</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user7.jpeg">
+            </div>
+            <div class="name">
+                <h3>Kashmiramasi</h3>
+                <h6>yesterday, 15.51</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user15.jpeg">
+            </div>
+            <div class="name">
+                <h3>Bhavani</h3>
+                <h6>yesterday, 17:18</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user18.jpeg">
+            </div>
+            <div class="name">
+                <h3>Shruti</h3>
+                <h6>yesterday, 19:20</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user13.jpeg">
+            </div>
+            <div class="name">
+                <h3>Rushit</h3>
+                <h6>yesterday, 20:02</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user12.jpeg">
+            </div>
+            <div class="name">
+                <h3>Kavita</h3>
+                <h6>yesterday, 22.22</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user14.jpeg">
+            </div>
+            <div class="name">
+                <h3>Jemish</h3>
+                <h6>yesterday, 23.32</h6>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- calls -->
+    <div class="calls">
+        <div class="user">
+            <div class="dp">
+                <img src="user3.jpeg">
+            </div>
+            <div class="name">
+                <h3>Vivekbhai</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user1.jpeg">
+            </div>
+            <div class="name">
+                <h3>papa</h3>
+                <h6><i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i></i>3 September, 12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user5.jpeg">
+            </div>
+            <div class="name">
+                <h3>Binalbhabhi</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user10.jpeg">
+            </div>
+            <div class="name">
+                <h3>Riddhi</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user8.jpeg">
+            </div>
+            <div class="name">
+                <h3>Irva</h3>
+                <h6><i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i></i>3 September, 12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user2.jpeg">
+            </div>
+            <div class="name">
+                <h3>Mummy</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user4.jpeg">
+            </div>
+            <div class="name">
+                <h3>Dharadidi</h3>
+                <h6><i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i></i>3 September, 7:30</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user7.jpeg">
+            </div>
+            <div class="name">
+                <h3>Masii</h3>
+                <h6><i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i></i>3 September,
+                    12:30</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user6.jpeg">
+            </div>
+            <div class="name">
+                <h3>Jay</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    8:30</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user9.jpeg">
+            </div>
+            <div class="name">
+                <h3>Sanskruti</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user14.jpeg">
+            </div>
+            <div class="name">
+                <h3>Jemish</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    1:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user12.jpeg">
+            </div>
+            <div class="name">
+                <h3>Kavita</h3>
+                <h6><i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user15.jpeg">
+            </div>
+            <div class="name">
+                <h3>Bhavani</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    7:30</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user13.jpeg">
+            </div>
+            <div class="name">
+                <h3>Rushit</h3>
+                <h6><i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user18.jpeg">
+            </div>
+            <div class="name">
+                <h3>Shruti</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    9:30</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user17.jpeg">
+            </div>
+            <div class="name">
+                <h3>Abhay</h3>
+                <h6><i class="fa fa-arrow-down" aria-hidden="true" style="color:rgb(17, 141, 110);"></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="user">
+            <div class="dp">
+                <img src="user16.jpeg">
+            </div>
+            <div class="name">
+                <h3>Smit</h3>
+                <h6><i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i></i>3 September,
+                    12:00</h6>
+            </div>
+            <div class="Cicon">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- chatbox open-->
+    <div class="openchatbox">
+        <div class="user">
+            <div class="dp">
+                <i class="fa fa-arrow-left" onclick="closechatbox()" aria-hidden="true"></i>
+                <img src="user1.jpeg">
+            </div>
+            <div class="name">
+                <h3>Papa</h3>
+            </div>
+            <div class="features">
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="messagebar">
+            <div class="messages">
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                <input type="text" placeholder="Type a message">
+                <i class="fa fa-ils" aria-hidden="true"></i>
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-microphone" aria-hidden="true" id="mic"></i>
+        </div>
+    </div>
+    <script src="whatup.js"></script>
+</body>
+</html>
