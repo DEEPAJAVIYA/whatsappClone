@@ -1,0 +1,485 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.nav {
+  width: auto;
+  height: 12rem;
+  background-color: #0d5a51;
+}
+
+.nav .nav1 {
+  width: auto;
+  height: 7rem;
+  color: white;
+  font-size: 2.7rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+}
+
+.nav .nav1 #abc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .nav1 #abc .name {
+  height: 5rem;
+  font-size: 3rem;
+  padding-left: 0.7rem;
+  font-weight: bold;
+}
+
+.nav .nav1 #abc .icon {
+  margin-left: 1rem;
+  height: 3rem;
+}
+
+.nav .nav1 #abc .icon a {
+  color: white;
+}
+
+.nav .nav1 #abc li {
+  list-style: none;
+  padding-left: 3rem;
+}
+
+.nav .nav1 #abc li a {
+  color: black;
+}
+
+.nav .nav1 #abc li #cde {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(-28rem, -0.3rem);
+          transform: translate(-28rem, -0.3rem);
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem grey;
+          box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem grey;
+}
+
+.nav .nav1 #abc li #cde li {
+  background-color: #fcf3f3;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 25rem;
+}
+
+.nav .nav1 #abc li #cde li a {
+  font-weight: 0.4rem;
+  font-size: 1.7rem;
+  color: black;
+  text-decoration: none;
+}
+
+.nav .nav1 #abc .icon:hover #cde {
+  display: block;
+}
+
+.nav .nav1 #abc .icon #cde li:hover {
+  background-color: #ddd4d4;
+}
+
+.nav .nav2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  width: auto;
+}
+
+.nav .nav2 .option {
+  text-align: center;
+  margin-left: 33rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav .nav2 .option a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.nav .nav2 .option a:hover {
+  border-bottom: 2px solid white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav .nav2 .option1 {
+  margin-left: 4rem;
+}
+
+.nav .nav2 .option1 i {
+  color: white;
+  font-size: 2rem;
+}
+
+#abc li:hover #cde li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 7.5rem;
+}
+
+.main .user .dp img {
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  width: 7rem;
+  height: 6.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.main .user .name {
+  height: 7.5rem;
+  width: 135.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2.7rem;
+}
+
+.main .user .name h3 {
+  font-size: 2.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main .user .name h6 {
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main .user .date {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.status {
+  height: auto;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.status .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 7.5rem;
+}
+
+.status .user .dp img {
+  border: 3px solid grey;
+  border-radius: 50%;
+  width: 7rem;
+  height: 6.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  top: 0;
+}
+
+.status .user .dp i {
+  color: green;
+  font-size: 2rem;
+  position: relative;
+  top: 0rem;
+  right: 2rem;
+}
+
+.status .user .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 3rem;
+  height: 7.5rem;
+  width: 135.5rem;
+}
+
+.status .user .name h3 {
+  font-size: 2.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.status .user .name h6 {
+  margin-top: 0.5rem;
+  width: 29rem;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.status .recent-status {
+  background-color: #eee2e2;
+  color: #3a3333;
+  font-size: 1.6rem;
+  text-align: left;
+  height: 3.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.status .recent-status h3 {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.calls {
+  height: auto;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calls .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7.5rem;
+  width: 100vw;
+}
+
+.calls .user .dp img {
+  border-radius: 50%;
+  width: 7rem;
+  height: 6.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.calls .user .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 3rem;
+  height: 7.5rem;
+  width: 135.5rem;
+}
+
+.calls .user .name h3 {
+  font-size: 2.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.calls .user .name h6 {
+  width: 25rem;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.calls .user .name h6 i {
+  font-size: 2rem;
+  padding-right: 0.5rem;
+}
+
+.calls .user .Cicon {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+.calls .user .Cicon i {
+  color: #118d6e;
+}
+
+hr {
+  width: 92%;
+  margin-left: 7%;
+}
+
+.searchbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 5rem;
+  background-color: white;
+  display: none;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #696767;
+          box-shadow: 0.5rem 0.5rem 0.5rem #696767;
+}
+
+.searchbar i {
+  font-size: 4rem;
+  color: #0d5a51;
+  padding-left: 2rem;
+}
+
+.searchbar input {
+  font-size: 2.3rem;
+  color: #474444;
+  border: none;
+  outline: none;
+  padding-left: 2rem;
+}
+
+.openchatbox {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d1c6c6;
+}
+
+.openchatbox .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 9vh;
+  width: 100vw;
+  background-color: #005842;
+}
+
+.openchatbox .user .dp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.openchatbox .user .dp i {
+  margin-left: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.openchatbox .user .dp img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+  border: 2px solid  whitesmoke;
+}
+
+.openchatbox .user .name h3 {
+  width: 115rem;
+  color: white;
+  margin-left: 2rem;
+  font-size: 2.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.openchatbox .user .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.openchatbox .user .features i {
+  padding-left: 5rem;
+}
+
+.openchatbox .messagebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+}
+
+.openchatbox .messagebar .messages {
+  background-color: white;
+  border: 1px solid #6b6868;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem  black;
+          box-shadow: 0.3rem 0.3rem 0.3rem  black;
+  width: 147rem;
+  height: 4rem;
+  margin-left: 1rem;
+  border-radius: 3rem;
+}
+
+.openchatbox .messagebar .messages i {
+  margin-top: 0.6rem;
+  font-size: 2.8rem;
+  padding-left: 2.5rem;
+}
+
+.openchatbox .messagebar .messages input {
+  margin-top: 0.6rem;
+  padding-left: 1rem;
+  width: 126rem;
+  outline: none;
+  border: none;
+  height: 3rem;
+  font-size: 2.5rem;
+}
+
+.openchatbox .messagebar #mic {
+  width: 5rem;
+  height: 4rem;
+  font-size: 4rem;
+  margin-left: 2rem;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=whatsup.css.map */
